@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Tab Finder</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 16px;
+      font-family: Arial, sans-serif;
+      background-color: #1e1e1e;
+      color: #ffffff;
+      width: 400px;
+    }
+
+    input[type="text"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 12px;
+      border-radius: 6px;
+      border: none;
+      background-color: #2d2d2d;
+      color: white;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      max-height: 300px;
+      overflow-y: auto;
+    }
+
+    li {
+      padding: 8px;
+      border-bottom: 1px solid #333;
+      cursor: pointer;
+    }
+
+    li:hover {
+      background-color: #333;
+    }
+
+    #shortcut-settings {
+      margin-top: 14px;
+      padding: 8px 12px;
+      width: 100%;
+      background-color: #444;
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    #shortcut-settings:hover {
+      background-color: #666;
+    }
+  </style>
+</head>
+<body>
+  <h2 style="margin-top: 0;">🔍 Tab Finder</h2>
+  <input type="text" id="search" placeholder="Type to search tabs..." />
+  <ul id="results"></ul>
+
+  <button id="shortcut-settings">Change Shortcut Key</button>
+
+  <script src="popup.js"></script>
+</body>
+</html>

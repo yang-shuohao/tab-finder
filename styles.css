@@ -1,0 +1,59 @@
+/* 默认（浅色） */
+body {
+  font-family: sans-serif;
+  margin: 10px;
+  width: 300px;
+  background-color: white;
+  color: black;
+}
+
+/* 搜索框 */
+#search {
+  width: 100%;
+  padding: 8px;
+  font-size: 14px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  background-color: white;
+  color: black;
+}
+
+/* 搜索结果 */
+#results {
+  list-style: none;
+  padding: 0;
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+li {
+  padding: 6px;
+  border-bottom: 1px solid #ccc;
+  cursor: pointer;
+}
+
+li:hover {
+  background-color: #eee;
+}
+
+/* 深色主题支持 */
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #1e1e1e;
+    color: white;
+  }
+
+  #search {
+    background-color: #333;
+    color: white;
+    border: 1px solid #555;
+  }
+
+  li {
+    border-bottom: 1px solid #444;
+  }
+
+  li:hover {
+    background-color: #333;
+  }
+}
