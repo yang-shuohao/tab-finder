@@ -41,18 +41,24 @@
       background-color: #333;
     }
 
-    #shortcut-settings {
+    .button-row {
+      display: flex;
+      gap: 8px;
       margin-top: 14px;
+    }
+
+    .btn {
+      flex: 1;
       padding: 8px 12px;
-      width: 100%;
       background-color: #444;
       color: #fff;
       border: none;
       border-radius: 6px;
       cursor: pointer;
+      text-align: center;
     }
 
-    #shortcut-settings:hover {
+    .btn:hover {
       background-color: #666;
     }
   </style>
@@ -62,7 +68,10 @@
   <input type="text" id="search" placeholder="Type to search tabs..." />
   <ul id="results"></ul>
 
-  <button id="shortcut-settings">Change Shortcut Key</button>
+  <div class="button-row">
+    <button class="btn" id="shortcut-settings">Change Shortcut Key</button>
+    <button class="btn" id="github-button">GitHub</button>
+  </div>
 
   <script src="popup.js"></script>
 </body>

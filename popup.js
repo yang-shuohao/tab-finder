@@ -34,3 +34,7 @@ function showResults(filteredTabs) {
 document.getElementById('shortcut-settings').addEventListener('click', () => {
   chrome.tabs.create({ url: "chrome://extensions/shortcuts" });
 });
+
+document.getElementById('github-button').addEventListener('click', () => {
+  chrome.tabs.create({ url: "https://github.com/yang-shuohao/tab-finder?tab=readme-ov-file" });
+});
